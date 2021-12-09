@@ -18,7 +18,7 @@ async function HelpCommand(ctx) {
    let keyboard = kbs.HelpSectionsKeyboards(language);
    keyboard['disable_web_page_preview'] = true;
    // reply = `${replies.trelloHelp}\r\n${Format.TrelloInfoLink(language, process.env.SMART_SCHEDULER_INVITE)}`;
-   BotReply(ctx, replies.commands, keyboard);
+   BotReply(ctx, replies.commands);
 }
 
 /** 
